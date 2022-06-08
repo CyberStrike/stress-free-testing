@@ -1,13 +1,14 @@
-export default {
+module.exports = {
   root: true,
   env: {
     node: true,
+    'cypress/globals': true
   },
   extends: [
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
     'prettier',
-    'prettier/vue',
+    'plugin:cypress/recommended'
   ],
-  plugins: ['vue'],
+  plugins: ['vue', 'cypress'],
 }
